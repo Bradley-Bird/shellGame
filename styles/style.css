@@ -91,14 +91,14 @@ footer {
 }
 
 .ball {
-    
+
     float: right;
     height: 15px;
     width: 15px;
     border-radius: 50%;
     background-color: red;
     padding: 20px;
-    margin: 10px; 
+    margin: 10px;
     margin-left: 40%;
-    margin-right:auto;  
+    margin-right: auto;
 }

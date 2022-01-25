@@ -44,58 +44,58 @@ shellOneButton.addEventListener('click', () => {
     }
 });
 shellTwoButton.addEventListener('click', () => {
-  //reset styles
-  shellOneContainer.classList.remove('ball');
-  shellTwoContainer.classList.remove('ball');
-  shellThreeContainer.classList.remove('ball');
-  //increment total
-  total++;
-  totalEl.textContent = total;
-  //put the ball somewhere
-  const ballLocation = Math.ceil(Math.random() * 3);
-  //console.log('click', ballLocation)
-  //define what to do if the ball is on this click
-  if (ballLocation === 1) {
-      shellOneContainer.classList.add('ball');
-  } else if (ballLocation === 2) {
-      shellTwoContainer.classList.add('ball');
-  } else {
-      shellThreeContainer.classList.add('ball');
-  }
+    //reset styles
+    shellOneContainer.classList.remove('ball');
+    shellTwoContainer.classList.remove('ball');
+    shellThreeContainer.classList.remove('ball');
+    //increment total
+    total++;
+    totalEl.textContent = total;
+    //put the ball somewhere
+    const ballLocation = Math.ceil(Math.random() * 3);
+    //console.log('click', ballLocation)
+    //define what to do if the ball is on this click
+    if (ballLocation === 1) {
+        shellOneContainer.classList.add('ball');
+    } else if (ballLocation === 2) {
+        shellTwoContainer.classList.add('ball');
+    } else {
+        shellThreeContainer.classList.add('ball');
+    }
 
-  if (ballLocation === 2) {
-      win++;
-      winEl.textContent = win;
-  } else {
-      loseEl.textContent = total - win;
-  }
+    if (ballLocation === 2) {
+        win++;
+        winEl.textContent = win;
+    } else {
+        loseEl.textContent = total - win;
+    }
 });
 shellThreeButton.addEventListener('click', () => {
-  //reset styles
-  shellOneContainer.classList.remove('ball');
-  shellTwoContainer.classList.remove('ball');
-  shellThreeContainer.classList.remove('ball');
-  //increment total
-  total++;
-  totalEl.textContent = total;
-  //put the ball somewhere
-  const ballLocation = Math.ceil(Math.random() * 3);
-  //console.log('click', ballLocation)
-  //define what to do if the ball is on this click
-  if (ballLocation === 1) {
-      shellOneContainer.classList.add('ball');
-  } else if (ballLocation === 2) {
-      shellTwoContainer.classList.add('ball');
-  } else {
-      shellThreeContainer.classList.add('ball');
-  }
+    //reset styles
+    shellOneContainer.classList.remove('ball');
+    shellTwoContainer.classList.remove('ball');
+    shellThreeContainer.classList.remove('ball');
+    //increment total
+    total++;
+    totalEl.textContent = total;
+    //put the ball somewhere
+    const ballLocation = Math.ceil(Math.random() * 3);
+    //console.log('click', ballLocation)
+    //define what to do if the ball is on this click
+    if (ballLocation === 1) {
+        shellOneContainer.classList.add('ball');
+    } else if (ballLocation === 2) {
+        shellTwoContainer.classList.add('ball');
+    } else {
+        shellThreeContainer.classList.add('ball');
+    }
 
-  if (ballLocation === 3) {
-      win++;
-      winEl.textContent = win;
-  } else {
-      loseEl.textContent = total - win;
-  }
+    if (ballLocation === 3) {
+        win++;
+        winEl.textContent = win;
+    } else {
+        loseEl.textContent = total - win;
+    }
 });
 // get user input
 // use user input to update state
