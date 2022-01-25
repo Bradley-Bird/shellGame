@@ -98,12 +98,13 @@ footer {
 .ball {
 
     float: right;
-    height: 15px;
-    width: 15px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
-    background-color: red;
+    background: radial-gradient(circle at 10px 10px, #ff825c, rgb(19, 18, 18));
     padding: 20px;
     margin: 10px;
     margin-left: 40%;
     margin-right: auto;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, .5);
 }
