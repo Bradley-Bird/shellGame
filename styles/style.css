@@ -52,6 +52,7 @@ section {
     border: solid 2px var(--color1);
 }
 
+
 header {
     display: flex;
     justify-content: flex-end;
