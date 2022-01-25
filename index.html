@@ -13,14 +13,23 @@
 </head>
 
 <body>
+    <video src="assets/Pexels Videos 1093650.mp4" loop autoplay></video>
     <header>
         <h1 id="titleHead">Shell Game!</h1>
         <div class="gutter-right logo">
             <img src="./assets/big-logo.png" />
         </div>
     </header>
+    <div class="overlay"></div>
     <main>
-        <section class="main-section">
+        <section id="counterSection">
+            <div id="counter">
+                <h3 class="count">Wins:<span id=win>0</span></h3>
+                <h3 class="count">Losses:<span id="lose">0</span></h3>
+                <h3 class="count">Total Games:<span id="total">0</span> </h3>
+            </div>
+        </section>
+        <section class="main-section" id="mainSection">
 
             <div 1 class="shell">
                 <img src="./assets/shell1.png">
@@ -42,13 +51,6 @@
                 <button class="button" id="buttonThree">Click Me!</button>
             </div>
 
-        </section>
-        <section>
-            <div id="counter">
-                <h3 class="count">Wins:<span id=win>0</span></h3>
-                <h3 class="count">Losses:<span id="lose">0</span></h3>
-                <h3 class="count">Total Games:<span id="total">0</span> </h3>
-            </div>
         </section>
     </main>
     <footer>
