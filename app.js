@@ -20,10 +20,10 @@ shellOneButton.addEventListener('click', () => {
     clickShell(1);
 });
 shellTwoButton.addEventListener('click', () => {
-    clickShell(2)
+    clickShell(2);
 });
-shellThreeButton.addEventListener('click', () =>{
-    clickShell(3)
+shellThreeButton.addEventListener('click', () => {
+    clickShell(3);
 });
 function clickShell(shellNum) {
     console.log('click');
