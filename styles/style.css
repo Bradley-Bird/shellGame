@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+
 body {
     /* feel free to update these css variables for a quick theme */
 
@@ -50,6 +52,7 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+
 }
 
 
@@ -107,4 +110,29 @@ footer {
     margin-left: 40%;
     margin-right: auto;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, .5);
+}
+
+.button {
+    background-color: rgb(172, 170, 189, .6);
+    color: black;
+    border: none;
+    padding: 10px, 32px;
+    margin: 4px 2px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: dongle;
+    border-radius: 15px;
+    transition-duration: .05s;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.18);
+}
+
+button:hover {
+    background-color: #ff825c;
+    color: white;
+}
+
+button:active {
+    background-color: #ff825c;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.24);
+    transform: translateY(4px);
 }
