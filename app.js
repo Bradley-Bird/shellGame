@@ -28,9 +28,12 @@ shellThreeButton.addEventListener('click', () => {
 function clickShell(shellNum) {
     console.log('click');
     // reset styles
-    shellOneContainer.classList.remove('ball');
-    shellTwoContainer.classList.remove('ball');
-    shellThreeContainer.classList.remove('ball');
+    function reset() {
+        shellOneContainer.classList.remove('ball');
+        shellTwoContainer.classList.remove('ball');
+        shellThreeContainer.classList.remove('ball');
+    }
+    reset();
     //increment total
     total++;
     totalEl.textContent = total;
