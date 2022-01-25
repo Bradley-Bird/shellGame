@@ -45,11 +45,13 @@ function clickShell(shellNum) {
     } else {
         shellThreeContainer.classList.add('ball');
     }
-
-    if (ballLocation === shellNum) {
-        win++;
-        winEl.textContent = win;
-    } else {
-        loseEl.textContent = total - win;
+    function displayResults() {
+        if (ballLocation === shellNum) {
+            win++;
+            winEl.textContent = win;
+        } else {
+            loseEl.textContent = total - win;
+        }
     }
+    displayResults();
 }
