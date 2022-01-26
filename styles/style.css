@@ -41,8 +41,19 @@ main {
     margin-bottom: calc(var(--footer-height));
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #282a16;
+    mix-blend-mode: overlay;
+}
+
 #counterSection {
     color: rgba(31, 7, 7, 0.7);
+    z-index: 10;
 }
 
 .main-section {
@@ -62,9 +73,7 @@ main {
     border: solid 2px var(--color1);
     z-index: 2;
     clear: both;
-
 }
-
 
 .counter {
     position: relative;
@@ -79,7 +88,7 @@ body video {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    z-index: -2;
+    opacity: 0.8;
 }
 
 
@@ -87,9 +96,10 @@ header {
     display: flex;
     justify-content: center;
     background-color: rgb(36, 21, 21, .5);
-    color: rgb(238, 224, 224, 0.9);
+    color: rgb(248, 246, 246);
     height: var(--header-height);
     box-shadow: var(--shadow);
+    z-index: 1000;
 
 }
 
