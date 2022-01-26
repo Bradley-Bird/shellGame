@@ -11,6 +11,8 @@ const winEl = document.getElementById('win');
 const loseEl = document.getElementById('lose');
 const totalEl = document.getElementById('total');
 
+const video = document.getElementById('backgroundVid');
+video.play();
 // let state
 let win = 0;
 let total = 0;

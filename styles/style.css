@@ -40,7 +40,6 @@ main {
     align-items: center;
     margin-bottom: calc(var(--footer-height));
 }
-
 .overlay {
     position: absolute;
     top: 0;
@@ -51,9 +50,10 @@ main {
     mix-blend-mode: overlay;
 }
 
+
 #counterSection {
-    color: rgba(31, 7, 7, 0.7);
-    z-index: 10;
+    color: rgba(113, 117, 103,);
+    z-index: 100;
 }
 
 .main-section {
@@ -88,9 +88,8 @@ body video {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    opacity: 0.8;
+    opacity: 0.95;
 }
-
 
 header {
     display: flex;
@@ -100,8 +99,8 @@ header {
     height: var(--header-height);
     box-shadow: var(--shadow);
     z-index: 1000;
-
 }
+
 
 
 h2 {
