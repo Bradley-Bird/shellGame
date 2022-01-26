@@ -9,57 +9,47 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Shell Game</title>
 </head>
 
 <body>
     <header>
+        <h1 id="titleHead">Shell Game!</h1>
         <div class="gutter-right logo">
             <img src="./assets/big-logo.png" />
         </div>
     </header>
+    <video id="backgroundVid" src="assets/beach.mp4" muted preload autoplay loop></video>
+    <div class="overlay"></div>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
+        <section id="counterSection">
+            <div id="counter">
+                <h3 class="count">Wins:<span id=win>0</span></h3>
+                <h3 class="count">Losses:<span id="lose">0</span></h3>
+                <h3 class="count">Total Games:<span id="total">0</span> </h3>
+            </div>
+        </section>
+        <section class="main-section" id="mainSection">
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
+            <div 1 class="shell">
+                <img src="./assets/shell1.png">
+                <div id="shell-1"></div>
+                <button class="button" id="buttonOne">Click Me!</button>
+            </div>
+
+
+            <div class="shell">
+                <img src="./assets/shell2.png">
+                <div id="shell-2"></div>
+                <button class="button" id="buttonTwo">Click Me!</button>
+
+            </div>
+
+            <div class="shell">
+                <img src="./assets/shell3.png">
+                <div id="shell-3"></div>
+                <button class="button" id="buttonThree">Click Me!</button>
+            </div>
 
         </section>
     </main>
@@ -68,6 +58,14 @@
     </footer>
 
     <script type="module" src="./app.js"></script>
+    <!-- <script>
+        const video = document.getElementById('backgroundVid');
+
+        video.addEventListener('timeupdate', function () {
+            if ((this.currentTime >= 7.0)) {
+                this.currentTime = 1.0;
+            }
+        });</script> -->
 </body>
 
 </html>
