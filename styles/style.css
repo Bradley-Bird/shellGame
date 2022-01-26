@@ -2,9 +2,9 @@
 
 
 body {
-    margin-left:auto;
-    margin-right:auto;
-    width:960px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
     /* feel free to update these css variables for a quick theme */
 
     --color1: white;
@@ -52,7 +52,7 @@ main {
     width: 100%;
     background: #22a59a;
     mix-blend-mode: overlay;
-}  
+}
 
 #titleHead {
     color: rgba(255, 255, 255. 0.9);
@@ -77,13 +77,14 @@ main {
     overflow-wrap: inherit;
 }
 
-#mainSection{
-    margin-left:auto;
-    margin-right:auto;
-    width:960px;
+#mainSection {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
 }
+
 .main-section {
-    
+
     position: relative;
     top: 200px;
     right: 25px;
