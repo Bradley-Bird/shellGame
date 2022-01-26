@@ -11,14 +11,15 @@ const winEl = document.getElementById('win');
 const loseEl = document.getElementById('lose');
 const totalEl = document.getElementById('total');
 
-// const video = document.getElementById('backgroundVid');
+// document.querySelector('video').addEventListener(
+//     'ended',
+//     function (e) {
+//         e.target.currentTime = ;
+//         e.target.play();
+//     },
+//     true
+// );
 
-// video.addEventListener('timeupdate', () => {
-//     if ((this.currentTime = 7.0)) {
-//         this.currentTime = 0.0;
-//     }
-// });
-// let state
 let win = 0;
 let total = 0;
 //trying to make this less redundant, and more readable.

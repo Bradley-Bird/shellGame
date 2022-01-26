@@ -2,6 +2,9 @@
 
 
 body {
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
     /* feel free to update these css variables for a quick theme */
 
     --color1: white;
@@ -41,15 +44,15 @@ main {
     margin-bottom: calc(var(--footer-height));
 }
 
-/* .overlay {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: #050000;
+    background: #22a59a;
     mix-blend-mode: overlay;
-} */
+}  
 
 #titleHead {
     color: rgba(255, 255, 255. 0.9);
@@ -61,14 +64,34 @@ main {
     z-index: 100;
 }
 
+.shell img {
+    width: 200px;
+}
+
+.shell {
+    height: 200px;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    overflow-wrap: inherit;
+}
+
+#mainSection{
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
+}
 .main-section {
+    
     position: relative;
-    bottom: 50%;
+    top: 200px;
+    right: 25px;
     background: rgb(70, 40, 40, 0.3);
     color: white;
     max-width: 80%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-top: var(--gutter);
@@ -101,7 +124,7 @@ header {
     display: flex;
     justify-content: center;
     background-color: rgb(36, 21, 21, .5);
-    color: rgb(248, 246, 246);
+    color: rgb(7, 6, 6);
     height: var(--header-height);
     box-shadow: var(--shadow);
     z-index: 1000;
