@@ -11,8 +11,13 @@ const winEl = document.getElementById('win');
 const loseEl = document.getElementById('lose');
 const totalEl = document.getElementById('total');
 
-const video = document.getElementById('backgroundVid');
-video.play();
+// const video = document.getElementById('backgroundVid');
+
+// video.addEventListener('timeupdate', () => {
+//     if ((this.currentTime = 7.0)) {
+//         this.currentTime = 0.0;
+//     }
+// });
 // let state
 let win = 0;
 let total = 0;

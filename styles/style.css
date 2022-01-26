@@ -40,19 +40,24 @@ main {
     align-items: center;
     margin-bottom: calc(var(--footer-height));
 }
-.overlay {
+
+/* .overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: #282a16;
+    background: #050000;
     mix-blend-mode: overlay;
+} */
+
+#titleHead {
+    color: rgba(255, 255, 255. 0.9);
+    z-index: inherit;
 }
 
-
 #counterSection {
-    color: rgba(113, 117, 103,);
+    color: rgba(113, 117, 103, );
     z-index: 100;
 }
 
@@ -79,6 +84,7 @@ main {
     position: relative;
     display: flex;
     clear: top;
+    z-index: inherit;
 }
 
 body video {
